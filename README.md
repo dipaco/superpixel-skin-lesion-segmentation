@@ -9,8 +9,6 @@ To run the code simply switch to the adequate paths to the PH2 or ISIC dataset i
 python main.py
 ```
 
-Tha main.py scripts 
-
 Please cite the paper as:
 
 ```bibtex
