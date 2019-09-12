@@ -122,14 +122,14 @@ Clinical Diagnosis:
 path = 'imgs'
 path_to_segmentation = './results'
 ph2_dataset_path = './PH2Dataset'
-isic_dataset = '/Users/dipaco/Documents/Datasets/ISIC-2017'
+isic_dataset = './ISIC-2017'
 
 #Set a class to manage the whole dataset
-#dataset = PH2Dataset(ph2_dataset_path)
-dataset = ISICDataset(isic_dataset)
+dataset = PH2Dataset(ph2_dataset_path)
+#dataset = ISICDataset(isic_dataset)
 
-min_ = 900
-max_ = 1000
+min_ = 0
+max_ = 200
 dataset.set_sample(image_indices=range(min_, max_))
 
 # Uncomment the following line to use just images: 'IMD242', 'IMD368', 'IMD306', instead of the whole dataset
